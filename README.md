@@ -1,78 +1,78 @@
-<p align="center">
-  <a href="https://www.chromatic.com/">
-    <img alt="Chromatic" src="https://avatars2.githubusercontent.com/u/24584319?s=200&v=4" width="60" />
-  </a>
-</p>
+# 📖 StreakBook
 
-<h1 align="center">
-  Chromatic's Intro to Storybook React Native template
-</h1>
+**StreakBook** is a modular, atomic design system built with **React Native + Storybook** to visually develop and test UI components for a habit tracking app.  
+It includes reusable components like `HabitCard`, `HabitList`, `WeeklyOverview`, and more — all styled for dark/light themes and ready for real-world use.
 
-This template ships with the main React Native and Storybook configuration files you'll need to get up and running fast.
+---
 
-## 🚅 Quick start
+## 🎯 Features
 
-1.  **Create the application.**
+- ⚛️ **Atomic Design** — Organized into atoms, molecules, and organisms
+- 📅 **Weekly Habit Overview** — Track 7-day habit completion visually
+- 🔁 **Progress Components** — Animated, dynamic habit progress display
+- 🌗 **Dark Mode Support** — Every component fully themed
+- 🧪 **Interaction Testing** — Powered by `play()` functions and Storybook testing library
+- 🧩 **Reusable Dashboard** — Full data-driven habit dashboard layout
+- 🧼 **Empty States** — Friendly fallbacks for no-habit scenarios
+- 💡 **Fully Isolated UI** — Test and develop without launching a full app
 
-    Use [degit](https://github.com/Rich-Harris/degit) to get this template.
+---
 
-    ```shell
-    # Clone the template
-    npx degit chromaui/intro-storybook-react-native-template#main taskbox
-    ```
+## 🛠️ Stack
 
-1.  **Install the dependencies.**
+| Tool                | Purpose                          |
+|---------------------|----------------------------------|
+| React Native        | Component framework              |
+| Expo SDK 53         | Dev environment + bundler        |
+| Storybook v5.3+     | Component workshop                |
+| TypeScript          | Safer, typed development          |
+| @expo/vector-icons  | Icons for UI badges and controls |
 
-    Navigate into your new site’s directory and install the necessary dependencies.
+---
 
-    ```shell
-    # Navigate to the directory
-    cd taskbox/
+## 📁 Project Structure
 
-    # Install the dependencies
-    yarn
-    ```
+components/
+atoms/ # Buttons, badges, toggles
+molecules/ # Cards, lists, empty state
+organisms/ # Weekly overview, dashboard
+screens/ # HabitScreen (data-driven wrapper)
+stories/ # All .stories.tsx files for Storybook
 
-1.  **Open the source code and start editing!**
+yaml
+Copy
+Edit
 
-    Open the `taskbox` directory in your code editor of choice and building your first component!
+---
 
-1.  **Browse your stories!**
+## 🚀 Getting Started
 
-    Run `yarn storybook:ios` for ios or `yarn storybook:android` for android to see your component's stories on your emulator or device.
+### 1. Clone & Install
 
-## 🔎 What's inside?
+```bash
+git clone https://github.com/your-username/streakbook.git
+cd streakbook
+npm install
+2. Run Storybook
+bash
+Copy
+Edit
+npm run storybook:web
+Or for mobile (with Expo Go or emulator):
 
-A quick look at the top-level files and directories included with this template.
+bash
+Copy
+Edit
+npm run storybook:android
+npm run storybook:ios
+🧪 Storybook Interactions
+You’ll find interaction tests inside story files using play() functions to simulate user actions like toggles and clicks.
 
-    .
-    ├── .gitignore
-    ├── LICENSE
-    ├── README.md
-    ├── App.jsx
-    ├── app.config.js
-    ├── yarn.lock
-    ├── package.json
-    ├── babel.config.js
+✅ Try it on:
 
-1.  **`.gitignore`**: This file tells git which files it should not track or maintain during the development process of your project.
+ReminderToggle.stories.tsx
 
-2.  **`LICENSE`**: The template is licensed under the MIT licence.
+HabitCard.stories.tsx
 
-3.  **`README.md`**: A text file containing useful reference information about the project.
-
-4. **`App.jsx`**: This is the entry point of your app.  
-
-5. **`app.config.js`**: This is the configuration file for Expo that allows you to customize your app.
-
-6. **`yarn.lock`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed.
-
-## Contribute
-
-If you encounter an issue with the template, we encourage you to open an issue in this template's repository.
-
-## Learning Storybook
-
-1. Read our introductory tutorial at [Learn Storybook](https://storybook.js.org/tutorials/intro-to-storybook/react-native/en/get-started/).
-2. Learn how to transform your component libraries into design systems in our [Design Systems for Developers](https://storybook.js.org/tutorials/design-systems-for-developers/) tutorial.
-3. See our official documentation at [Storybook](https://storybook.js.org/).
+💡 Inspiration
+This project follows the official Intro to Storybook React Native tutorial and expands it into a fully functional, real-world habit tracking design system.
